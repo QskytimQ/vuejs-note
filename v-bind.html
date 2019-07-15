@@ -1,0 +1,21 @@
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+  <div id="timeDiv" v-bind:title="nowTime">
+    {{content}}
+  </div>
+  <script>
+    let timeData = {
+    content:'now time',
+    nowTime:'It is currently ' + String(new Date()),
+    }
+    let timeDiv = new Vue({
+        el:'#timeDiv',
+        data:timeData,
+    })
+  </script>
+</body>
+
+</html>
