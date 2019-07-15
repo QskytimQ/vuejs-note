@@ -1,0 +1,27 @@
+<html>
+<head>
+  <script src="vue.min.js"></script>
+</head>
+<body>
+  <!-- <div id="timeDiv" v-on:click="getTime" > -->
+  <div id="timeDiv" @click="getTime" >
+    {{content}}
+  </div>
+  <script>
+    let timeData = {
+    content:'點我看時間',
+    }
+    let timeMethods = {
+        getTime: ()=>{
+            console.log(String(new Date()))
+        },
+    }
+    let timeDiv = new Vue({
+        el:'#timeDiv',
+        data : timeData,
+        methods: timeMethods,
+    })
+  </script>
+</body>
+
+</html>
