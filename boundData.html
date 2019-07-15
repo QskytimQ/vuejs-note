@@ -1,0 +1,22 @@
+<html>
+<head>
+  <!--開發版本-->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <!--生產版本-->
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+  <div id="firstVue">
+    {{content}}
+  </div>
+  <script>
+    let firstVueObj = new Vue({
+      el:'#firstVue',
+      data:{
+          content:'Hello!world!',
+      },
+    })
+  </script>
+</body>
+
+</html>
